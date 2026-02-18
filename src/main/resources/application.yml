@@ -1,0 +1,9 @@
+server:
+  port: 8092
+
+spring:
+  profiles:
+    active: h2  #Postgres: "active: postgres"
+
+  liquibase:
+    change-log: classpath:/db/changelog/db.changelog-master.xml

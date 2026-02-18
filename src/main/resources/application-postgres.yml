@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: postgres
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/propertydb
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 1111
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
