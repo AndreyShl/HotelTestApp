@@ -7,6 +7,7 @@ import org.example.testpr.service.HotelService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -55,7 +56,8 @@ public class HotelController {
             @RequestParam(required = false) String brand,
             @RequestParam(required = false) String city,
             @RequestParam(required = false) String country,
-            @RequestParam(required = false) Set<String> amenities) {
+
+            HashMap @RequestParam(required = false) Set<String> amenities) {
 
         return hotelService.searchHotels(name, brand, city, country, amenities);
     }
